@@ -1,6 +1,6 @@
 # CalcJS #
 
- - Calculadora simples que faz as 4 opeções básicas.
+ - Calculadora simples que faz as 4 operações básicas.
 
 ## Techs ##
 
