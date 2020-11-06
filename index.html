@@ -3,33 +3,60 @@
 <head>
 	<meta charset="utf-8">
 	<title>CalcJS</title>
+	<link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-	<h1>Calculator</h1>
-	
-	<input id="display">
+	<div id="main">
+		<div id='title'>
+			<h1>Calculator</h1>
+		</div>
 
-	<br>
-	<br>
+		<div id="calculator">
+			<form>
+				<input id="display" class="display" name="display">
+			</form>
 
-	<button onclick="pressNumber(this)">1</button>
-	<button onclick="pressNumber(this)">2</button>
-	<button onclick="pressNumber(this)">3</button>
-	<button onclick="pressNumber(this)">4</button>
-	<button onclick="pressNumber(this)">5</button>
-	<button onclick="pressNumber(this)">6</button>
-	<button onclick="pressNumber(this)">7</button>
-	<button onclick="pressNumber(this)">8</button>
-	<button onclick="pressNumber(this)">9</button>
-	<button id="add">+</button>
-	<button onclick="clearDisplay()">C</button>
+			<table>
+				<td>
+					<button type="click" onclick="clean()">C</button>
+					<button type="click" onclick="del()"> < </button>
+					<button type="click" onclick='press("/")'>/</button>
+					<button type="click" onclick='press("*")'>*</button>
+				</td>
+				<tr>
+					<td>
+						<button type="click" onclick="press(7)">7</button>
+						<button type="click" onclick="press(8)">8</button>
+						<button type="click" onclick="press(9)">9</button>
+						<button type="click" onclick='press("+")'>+</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button type="click" onclick="press(4)">4</button>
+						<button type="click" onclick="press(5)">5</button>
+						<button type="click" onclick="press(6)">6</button>
+						<button type="click" onclick='press("-")'>-</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button type="click" onclick="press(1)">1</button>
+						<button type="click" onclick="press(2)">2</button>
+						<button type="click" onclick="press(3)">3</button>
+						<button type="click" onclick="equal()" class="equal">=</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button type="click" onclick="press(0)" class="n0">0</button>
+						<button type="click" onclick='press(".")'>.</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 
-	<br>
-	<br>
-
-	<span>Result:</span>
-	<span id="result"></span>
-
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
